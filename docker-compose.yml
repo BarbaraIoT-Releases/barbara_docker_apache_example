@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  web:
+    build: ./webapp
+    container_name: apache_web
+    restart: always
+    ports:
+      - "80:80"
